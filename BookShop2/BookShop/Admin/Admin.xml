@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteRoot id="root" title="管理员控制面板" description="">
+  <siteMapNode url="" title="用户管理" description="">
+    <siteMapNode url="" title="用户列表" description=""/>
+    <siteMapNode url="" title="状态管理" description=""/>
+  </siteMapNode>
+  <siteMapNode url="" title="图书管理" description="">
+    <siteMapNode url="" title="添加图书分类" description=""/>
+    <siteMapNode url="" title="为书籍分类" description=""/>
+    <siteMapNode url="" title="书籍列表" description=""/>
+  </siteMapNode>
+  <siteMapNode url="" title="订单管理" description="">
+    <siteMapNode url="" title="审核订单" description=""/>
+  </siteMapNode>
+  <siteMapNode url="" title="管理员退出" description="">  </siteMapNode>
+  
+</siteRoot>

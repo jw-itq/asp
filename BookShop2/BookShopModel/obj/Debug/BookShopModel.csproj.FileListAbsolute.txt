@@ -1,0 +1,17 @@
+D:\BookShop2\BookShopModel\bin\Debug\BookShopModel.dll
+D:\BookShop2\BookShopModel\bin\Debug\BookShopModel.pdb
+D:\BookShop2\BookShopModel\obj\Debug\BookShopModel.dll
+D:\BookShop2\BookShopModel\obj\Debug\BookShopModel.pdb
+D:\zhang\BookShop2\BookShopModel\bin\Debug\BookShopModel.dll
+D:\zhang\BookShop2\BookShopModel\bin\Debug\BookShopModel.pdb
+D:\zhang\BookShop2\BookShopModel\obj\Debug\BookShopModel.dll
+D:\zhang\BookShop2\BookShopModel\obj\Debug\BookShopModel.pdb
+D:\zhang\BookShop1\BookShop2\BookShopModel\bin\Debug\BookShopModel.dll
+D:\zhang\BookShop1\BookShop2\BookShopModel\bin\Debug\BookShopModel.pdb
+D:\zhang\BookShop1\BookShop2\BookShopModel\obj\Debug\BookShopModel.dll
+D:\zhang\BookShop1\BookShop2\BookShopModel\obj\Debug\BookShopModel.pdb
+H:\BookShop2\BookShopModel\bin\Debug\BookShopModel.dll
+H:\BookShop2\BookShopModel\bin\Debug\BookShopModel.pdb
+H:\BookShop2\BookShopModel\obj\Debug\BookShopModel.csprojResolveAssemblyReference.cache
+H:\BookShop2\BookShopModel\obj\Debug\BookShopModel.dll
+H:\BookShop2\BookShopModel\obj\Debug\BookShopModel.pdb
