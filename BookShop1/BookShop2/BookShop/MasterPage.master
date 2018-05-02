@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>网上书店</title>
+    <style type="text/css">
+        * {padding:0;margin:0;}
+        image{border :0;}
+        div {color:#000000;font-size:12px; }
+        td {color:#000000;font-size:12px;}
+        .topdiv {position:absolute;left:1130px;top:100px;width:190px;}
+        .top-input {border:0;background:#FFFFFF;width:175px;height:20px;padding-top:2px;}
+        .middle-bg {background:url(Images/index-bg.jpg) 0px 0px no-repeat;width:1024px;}
+        .middle-left {width:180px;}
+        .middle-left1 {width:150px;border-left:1px #7AB271 solid;border-right :1px #7AB271 solid;padding :10px 5px 10px 5px;}
+        .bottom {width:80px;color:#000000;line-height:30px;font-size:12px;text-align:center;text-decoration:none;}
+        .bottom:hover{width:80px;color:#000000;line-height:30px;font-size:12px;text-align:center;text-decoration:none;}
+        .bcopyright {color :#666666;font-size:12px;text-align:center;}
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <!--网站头部-->
+        <div style="width:1024px;height :150px;margin :0 auto;">
+          <div>
+              <img src="Images/index-top.jpg" border="0" usemap="#Map" id="IMG1"/>
+          </div>
+          <div class ="topdiv">
+              <asp:TextBox ID="txtSearch" runat="server" Width="186px" Height="20px"></asp:TextBox>
+          </div>
+        </div>
+
+        <!--网站中间部分-->
+        <div class ="middle-bg" style ="width:1024px;margin:0 auto;">
+         <div style="padding-left:30px;width:993px; font-size:13px;line-height:30px;font-weight:bold;margin :0 auto;">您现在的位置：
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+         </div>
+        <div style="padding:15px 0px 15px 0px;">
+          <table width="900px" border="0" cellspacing="0" cellpading="0" align="center">
+              <tr>
+                  <!--左边导航-->
+                  <td class ="middle-left" valign="top"><div><img src="Images/menu-top.gif"/></div>
+                    <div class ="middle-left1" align="left">
+                      <asp:TreeView ID="TreeView1" runat="server" DataSourceID="XmlDataSource1">
+                          <DataBindings>
+                              <asp:TreeNodeBinding DataMember="siteMapNode" TextField="title" />
+                              <asp:TreeNodeBinding DataMember="siteMapNode" NavigateUrlField="url" TextField="title" />
+                          </DataBindings>
+                        </asp:TreeView>
+                        <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/TreeView.xml"></asp:XmlDataSource>
+                    </div>
+                      <div><img src="Images/menu-bottom.gif" /></div>
+                  </td>
+                  <td valign="top">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                              <td>
+                                <div>
+                                  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                                  </asp:ContentPlaceHolder>
+                                </div>
+                              </td>
+                          </tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+        </div>
+       
+     </div>
+      <!--网站底部开始-->
+      <div>
+          <div align="center"><img src="Images/line-1.gif" width="960" height="6"/><br />
+         <a href="#" class="bottom">公司简介</a>&nbsp;&nbsp;<a href="#" class="bottom">诚征英才</a>&nbsp;&nbsp;<a href="#" class="bottom">网站联盟</a>
+            &nbsp;&nbsp;<a href="#" class="bottom">店中店招商</a>&nbsp;&nbsp;<a href="#" class="bottom">交易条款</a>
+        </div>
+        <div class="bcopyright">Copyright(C)北大青鸟 2018-2020，All Rights Reserved<img src="Images/validate.gif" align="absmiddle"/>
+            <span style="font-size :13px;color:#000000;">京ICP证号</span>
+        </div>
+    </div>
+
+        <map name="Map">
+          <area  shape="rect" coords ="224,95,307,125" href="default.aspx"/>
+          <area  shape="rect" coords ="326,96,407,123" href="Cart.aspx"/>
+          <area  shape="rect" coords ="426,96,503,125" href="MembShiper/UserLogin.aspx"/>
+          <area  shape="rect" coords ="525,96,609,125" href="Admin/UserList.aspx"/>
+          <area  shape="rect" coords ="896,102,939,124" href="javascript:Search();"/>
+          <area  shape="rect" coords ="943,102,986,125" href="rss.aspx"/>
+        </map>
+    </div>
+    </form>
+</body>
+</html>
